@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>Marker based AR Portfolio</title>
+
+  <!-- Import A-Frame and then AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+</head>
+
+<body >
+  <a-scene vr-mode-ui="enabled:false" embeddedarjs="sourceType:webcam sourceWidth=1247 sourceHeight=935 displayWidth=1247 displayHeight=935 debugUIEnabled=false">
+      <a-assets>
+        <a-image id="img1" src="./VR-AR-ProjectCards/2.png"></a-image>
+        <a-image id="img2" src="./VR-AR-ProjectCards/3.png"></a-image>
+        <a-image id="img3" src="./VR-AR-ProjectCards/4.png"></a-image>
+        <a-image id="img4" src="./VR-AR-ProjectCards/5.png"></a-image>
+        <a-image id="img5" src="./VR-AR-ProjectCards/6.png"></a-image>
+      </a-assets>
+      <a-marker type="pattern" url="./assets/pattern-icon-01.patt"><a-plane position="0 1 -2" width="2" height="2" src="#img1"></a-plane></a-marker>   
+      <a-marker type="pattern" url="./assets/pattern-icon-02.patt"><a-plane position="-5 1 -2" rotation="90 0 0" width="2" height="2" src="#img2"></a-plane></a-marker>   
+      <a-marker type="pattern" url="./assets/pattern-icon-03.patt"><a-plane position="0 1 -2" width="2" height="2" src="#img3"></a-plane></a-marker>   
+      <a-marker type="pattern" url="./assets/pattern-icon-04.patt"><a-plane position="0 1 -2" width="2" height="2" src="#img4"></a-plane></a-marker>   
+      <a-marker type="pattern" url="./assets/pattern-icon-05.patt"><a-plane position="0 1 -2" width="2" height="2" src="#img5"></a-plane></a-marker>   
+      
+    </a-scene>
+
+ 
+</body>
+
+</html>
